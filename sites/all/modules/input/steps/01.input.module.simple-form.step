@@ -14,11 +14,11 @@
  */
 function input_menu() {
   $items['input/examples'] = array(
-	  'title' => 'Form API examples',
-	  'description' => 'Example of using the Form API.',
-	  'page callback' => 'drupal_get_form',
-	  'page arguments' => array('input_simple_form'),
-	  'access callback' => TRUE,
+    'title' => 'Form API examples',
+    'description' => 'Example of using the Form API.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('input_simple_form'),
+    'access callback' => TRUE,
   );
   return $items;
 }
@@ -29,14 +29,14 @@ function input_menu() {
  */
 function input_simple_form($form, &$form_submit) {
   $form['color'] = array(
-	  '#title' => t('Favorite color'),
-	  '#type' => 'textfield',
-	  '#required' => TRUE,
-	  '#description' => t('What is your favorite color? Blue? No, wait-'),
+    '#title' => t('Favorite color'),
+    '#type' => 'textfield',
+    '#required' => TRUE,
+    '#description' => t('What is your favorite color? Blue? No, wait-'),
   );
   $form['submit'] = array(
-	  '#type' => 'submit',
-	  '#value' => 'Submit',
+    '#type' => 'submit',
+    '#value' => 'Submit',
   );
   return $form;
 }
